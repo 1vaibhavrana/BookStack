@@ -25,8 +25,8 @@ const features = [
     ),
   },
   {
-    title: "Borrow & Return",
-    desc: "One‑click checkout, due‑date reminders, and penalties tracking.",
+    title: "Download & Upload",
+    desc: "Download and Upload your most favourite book at one place",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -44,8 +44,8 @@ const features = [
     ),
   },
   {
-    title: "Role‑based Admin",
-    desc: "Admin, Librarian, and Member dashboards out of the box.",
+    title: "Self Admin",
+    desc: "Admin, Librarian, and Member you have the power of all the three",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -68,7 +68,7 @@ const features = [
     ),
   },
   {
-    title: "Mobile Friendly",
+    title: "Read Friendly UI",
     desc: "Fully responsive UI with PWA‑ready layout patterns.",
     icon: (
       <svg
@@ -103,8 +103,8 @@ const features = [
     ),
   },
   {
-    title: "REST & Webhooks",
-    desc: "Integrate with your MERN backend via secure endpoints.",
+    title: "Connect ",
+    desc: "Connect with people of similar reads",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -189,47 +189,43 @@ export default function LandingPage() {
                 experience.
               </h1>
               <p className="mt-4 text-lg text-neutral-600 dark:text-neutral-300">
-                Discover, borrow, and manage books—from a clean MERN powered
-                dashboard. Built for speed, security, and scale.
+                Discover, download, upload and manage e-books from one place.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
                   href="/app"
                   className="px-5 py-3 rounded-2xl bg-neutral-900 text-white dark:bg-white dark:text-neutral-900 font-medium hover:opacity-90"
                 >
-                  Open App
+                  Find your Niche
                 </a>
                 <a
                   href="#features"
                   className="px-5 py-3 rounded-2xl border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-50 dark:hover:bg-neutral-900 font-medium"
                 >
-                  See features
+                  Upload
                 </a>
               </div>
               <div className="mt-6 flex items-center gap-4 text-sm text-neutral-500 dark:text-neutral-400">
                 <span className="inline-flex items-center gap-1">
-                  ✅ Open Source
+                  ✅ Reader's Hood
                 </span>
                 <span className="inline-flex items-center gap-1">
-                  ⚡ Node + Express + MongoDB
+                  ⚡Self-taught 
                 </span>
                 <span className="inline-flex items-center gap-1">
-                  🧩 React + Tailwind
+                  🧩 Future Builder's
                 </span>
               </div>
             </div>
             <div className="relative">
               <div className="absolute -inset-4 -z-10 rounded-3xl bg-gradient-to-br from-indigo-500/20 via-fuchsia-500/20 to-rose-500/20 blur-2xl" />
-              <div className="aspect-[16/10] w-full rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/70 shadow-xl">
-                {/* Replace with an image/screenshot of your app */}
-                <div className="h-full w-full grid place-items-center text-center p-6">
-                  <div>
-                    <div className="text-6xl mb-3">📖</div>
-                    <p className="text-sm text-neutral-500 dark:text-neutral-400">
-                      Drop a product screenshot here (img tag)
-                    </p>
-                  </div>
-                </div>
+
+              <div className="aspect-[16/10] w-full rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/70 shadow-xl overflow-hidden">
+                <img
+                  src="/hero.jpg"
+                  alt="Hero Image"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -242,9 +238,6 @@ export default function LandingPage() {
           <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
             Everything you need for a modern library
           </h2>
-          <p className="mt-2 text-neutral-600 dark:text-neutral-300">
-            Plug this page into your MERN backend and ship fast.
-          </p>
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((f) => (
               <div
@@ -277,9 +270,7 @@ export default function LandingPage() {
               <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
                 Browse by category
               </h2>
-              <p className="mt-2 text-neutral-600 dark:text-neutral-300">
-                Deep links that point straight into your app routes.
-              </p>
+              
             </div>
             <a
               href="/catalog"
@@ -361,7 +352,7 @@ export default function LandingPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="rounded-3xl border border-neutral-200 dark:border-neutral-800 p-8 md:p-12 text-center bg-gradient-to-br from-neutral-50 to-white dark:from-neutral-950 dark:to-neutral-900">
             <h3 className="text-2xl md:text-3xl font-bold">
@@ -387,13 +378,13 @@ export default function LandingPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FOOTER */}
       <footer className="py-10 border-t border-neutral-200/60 dark:border-neutral-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
           <p className="text-neutral-500">
-            © {new Date().getFullYear()} BookStack. Built with MERN + Tailwind.
+            © {new Date().getFullYear()} BookStack.
           </p>
           <div className="flex items-center gap-4 text-neutral-500">
             <a href="/privacy" className="hover:opacity-80">
